@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/veeraveeraveera/ruby_kafka_retry"
   spec.metadata["changelog_uri"] = "https://github.com/veeraveeraveera/ruby_kafka_retry"
 
+  spec.files = Dir["lib/**/*.rb"] + Dir["exe/*"] + Dir["*.gemspec"] + Dir["README*"]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
