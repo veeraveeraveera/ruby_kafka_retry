@@ -93,13 +93,13 @@ production:
 
 # Dependencies
 The `ruby_kafka_retry` gem depends on the following gems:
-    * ruby-kafka
-    * sidekiq
+* ruby-kafka
+* sidekiq
 
 # Running Services
 To use this gem, ensure the following services are running in the background:
-    1. **Kafka Server**: Ensure your Kafka server is up and running.
-    2. **Sidekiq Server**: Start your Sidekiq server to handle background job processing.
+1. **Kafka Server**: Ensure your Kafka server is up and running.
+2. **Sidekiq Server**: Start your Sidekiq server to handle background job processing.
 
 ## Development
 
@@ -109,4 +109,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby_kafka_retry.
+Bug reports and pull requests are welcome on GitHub at https://github.com/veeraveeraveera/ruby_kafka_retry.
