@@ -9,16 +9,18 @@ The `ruby_kafka_retry` gem provides a mechanism to handle message retries and de
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby_kafka_retry'
+source "https://rubygems.pkg.github.com/veeraveeraveera" do
+  gem "ruby_kafka_retry", "0.1.0"
+end
 ```
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
+<!-- Or install it yourself as:
 
-    $ gem install ruby_kafka_retry
+    $ gem install ruby_kafka_retry -->
 
 ## Usage
 # Retrying Messages
