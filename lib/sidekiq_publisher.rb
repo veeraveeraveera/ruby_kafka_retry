@@ -22,6 +22,6 @@ class SidekiqPublisher
   def publish_to_sidekiq(topic, message)
     configure_sidekiq_server
     delay_time = get_delay_time(message['current_retry_attempt'])
-    FailedEventDelayedRetryWorker.perform_in(delay_time.minutes, topic, message)
+    FailedEventDelayedRetryWorker.set(queue: @configs['sidekiq_queue']).perform_in(delay_time.minutes, topic, message)
   end
 end
