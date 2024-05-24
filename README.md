@@ -89,6 +89,8 @@ production:
   redis_port: "6379"
 ```
 
+add `failed_event_delayed_retry` queue in `sidekiq.yml` file as well
+
 # Dependencies
 The `ruby_kafka_retry` gem depends on the following gems:
 * ruby-kafka
