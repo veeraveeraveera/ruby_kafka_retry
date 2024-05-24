@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["veeramani.t"]
   spec.email = ["veeramani.t@caratlane.com"]
 
-  spec.summary = "Kafka exponential delay retry"
-  spec.description = "Kafka exponential delay retry"
+  spec.summary = "Kafka messages are retried with an increasing delay before being sent to a DLQ"
+  spec.description = "The RubyKafkaRetry gem provides a mechanism to handle message retries and dead-letter queue (DLQ) functionality in Ruby applications using Kafka. It ensures messages are retried with an increasing delay before being sent to a DLQ."
   spec.homepage = "https://github.com/veeraveeraveera/ruby_kafka_retry"
   spec.required_ruby_version = ">= 2.2"
 
@@ -24,6 +24,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.add_dependency "rails", ">= 4.2"
+  spec.add_dependency "sidekiq"
+  spec.add_dependency "ruby-kafka"
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
