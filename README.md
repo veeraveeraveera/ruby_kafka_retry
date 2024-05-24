@@ -1,7 +1,5 @@
 # RubyKafkaRetry
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_kafka_retry`. To experiment with that code, run `bin/console` for an interactive prompt.
-
 The `ruby_kafka_retry` gem provides a mechanism to handle message retries and dead-letter queue (DLQ) functionality in Ruby applications using Kafka. It ensures messages are retried with an increasing delay before being sent to a DLQ.
 
 ## Installation
