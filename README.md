@@ -35,14 +35,12 @@ retry_event.retry
 ```
 
 # Detailed Description
-1. First Retry Attempt:
-    If the topic_message does not include the `current_retry_attempt` key, the gem considers it as the first retry attempt and `current_retry_attempt` will be appended to the `topic_message` with the value as 1. The modified `topic_message` will then be published to the retry_topic.
-2. Message Format:
-    The `topic_message` must be a hash. If a non-hash object is passed, the gem will raise an error:
+1. **First Retry Attempt**: If the topic_message does not include the `current_retry_attempt` key, the gem considers it as the first retry attempt and `current_retry_attempt` will be appended to the `topic_message` with the value as 1. The modified `topic_message` will then be published to the retry_topic.
+2. **Message Format**: The `topic_message` must be a hash. If a non-hash object is passed, the gem will raise an error:
      ```ruby
      raise TypeError, 'topic_message must be a Hash'
      ```
-3. Retry Logic:
+3. **Retry Logic**:
     * If the `current_retry_attempt` value in the topic_message reaches the `max_retry_attempt` count, the message will be published to the DLQ topic.
     * If the `current_retry_attempt` value is less than the `max_retry_attempt`, the `current_retry_attempt` value will be incremented, and the message will be republished to the `retry_topic` after a delay.
     * The delay before republishing is calculated as `2 ** current_retry_attempt` minutes.
