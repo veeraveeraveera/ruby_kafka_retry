@@ -7,9 +7,7 @@ The `ruby_kafka_retry` gem provides a mechanism to handle message retries and de
 Add this line to your application's Gemfile:
 
 ```ruby
-source "https://rubygems.pkg.github.com/veeraveeraveera" do
-  gem "ruby_kafka_retry", "0.1.0"
-end
+gem "ruby_kafka_retry", :git => 'git@github.com:veeraveeraveera/ruby_kafka_retry.git', branch: 'main'
 ```
 
 And then execute:
