@@ -3,27 +3,19 @@
 The `ruby_kafka_retry` gem provides a mechanism to handle message retries and dead-letter queue (DLQ) functionality in Ruby applications using Kafka. It ensures messages are retried with an increasing delay before being sent to a DLQ.
 
 ## Installation
-Add this token to bundle config for the gem installation access
-
-```sh
-bundle config rubygems.pkg.github.com veeraveeraveera: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
-```
-
 Add this line to your application's Gemfile:
 
 ```ruby
-source "https://rubygems.pkg.github.com/veeraveeraveera" do
-  gem "ruby_kafka_retry", "0.1.0"
-end
+gem 'ruby_kafka_retry', '~> 0.1.0'
 ```
 
 And then execute:
 
     $ bundle install
 
-<!-- Or install it yourself as:
+Or install it yourself as:
 
-    $ gem install ruby_kafka_retry -->
+    $ gem install ruby_kafka_retry
 
 ## Usage
 # Retrying Messages

@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/veeraveeraveera/ruby_kafka_retry"
   spec.required_ruby_version = ">= 2.2"
 
-  spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/veeraveeraveera"
-
   spec.metadata["homepage_uri"] = "https://github.com/veeraveeraveera/ruby_kafka_retry"
   spec.metadata["source_code_uri"] = "https://github.com/veeraveeraveera/ruby_kafka_retry"
   spec.metadata["changelog_uri"] = "https://github.com/veeraveeraveera/ruby_kafka_retry"
@@ -27,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 4.2"
   spec.add_dependency "sidekiq"
   spec.add_dependency "ruby-kafka"
+  spec.license = "MIT"
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
